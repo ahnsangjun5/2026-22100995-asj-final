@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./css/styles.css">
+	<title></title>
+</head>
+<body>
+	<nav class="side-nav">
+        <a href="index.html" class="nav-box nav-arrow">←</a>
+        <a href="#header-top" class="nav-box">Top</a>
+        <a href="#outline" class="nav-box">outline</a>
+        <a href="#info" class="nav-box">Info</a>
+        <a href="#conseq" class="nav-box">Conseq</a>
+    </nav>
+    <main class="main-content">
+	<header id="header-top"class="header-contents" style="background-image: url('./yodoho.png');" >
+		<div class="header-text">
+			<h1>JAL Flight 351 Hijacking<br>March 31st, 1970<br>JAL Flight 139<br>From Haneda<br>To Fukuoka</h1>
+		</div>
+	</header>
+	<section id="outline">
+		<div class="o-contents">
+			<p class="o-title">outline</p>
+			<div class="o-row">
+				<h2 class="o-index">사건명</h2>
+				<h2>요도호 납치 사건</h2>
+			</div>
+			<div class="o-row">
+				<h2 class="o-index">납치 항공편</h2>
+				<h2>일본항공 351편</h2>
+			</div>
+			<div class="o-row">
+				<h2 class="o-index">출발지</h2>
+				<h2>도쿄 하네다</h2>
+			</div>
+			<div class="o-row">
+				<h2 class="o-index">목적지</h2>
+				<h2>후쿠오카</h2>
+			</div>
+			<div class="o-row">
+				<h2 class="o-index">사건 발생지</h2>
+				<h2>일본 상공 및 김포 공항</h2>
+			</div>
+			<div class="o-row">
+				<h2 class="o-index">범인</h2>
+				<h2>일본 극좌 공산주의 적군파</h2>
+			</div>
+		</div>
+	</section>
+	<section id="info">
+		<div class="o-contents">
+			<p class="o-title">info</p>
+			<div>
+				<h2>11970년 3월 31일 오전 7시 33분경 도쿄 하네다 공항에서 후쿠오카로 가던 일본항공 국내선 351편, 요도호를 <span class="hover-popup-container"><span class="txt-hover">타미야 타카마로</span> 
+                    <div class="preview-box">
+                    <img src="./tamiya.webp"> <div class="preview-caption">적군파의 주동자로 '마로'라는 별명으로 불렸다. 승객들에게 유일하게 자신의 성을 밝혔다.</div>
+                </div></span>등 9명의 일본 적군파 조직원이 일본도, 폭탄, 무기 등을 꺼내며 공중 납치했다. 이들의 목표는 북한으로의 망명을 통해 북한을 일본 공산혁명을 위한 배후지로 만드는 것이었다. 비행기는 우선 후쿠오카에 착륙, 일부 승객들을 석방하고 연료를 보급했다. 일본 경찰 및 자위대가 공작을 펼쳤지만 오히려 범인들을 더욱 자극했다. 이후 북한으로 출발했지만 한국 정부와 일본 정부가 협업해 북한 공항처럼 꾸민 <span class="hover-popup-container"><span class="txt-hover">김포공항</span> 
+                    <div class="preview-box">
+                    <img src="./gimpo.jpg"> <div class="preview-caption">김포공항의 태극기를 내리고 인공기를 올리거나 '환영 평양 도착'같은 플랜카드까지 걸었다.</div>
+                </div></span>으로 유도해 착륙했다.하지만 인민군으로 위장한 한국군의 실수로 평양이 아니라는 것을 알아챘고 각종 협상 끝에 탑승객 전원과 <span class="hover-popup-container"><span class="txt-hover">야마무라 신지로</span> 
+                    <div class="preview-box">
+                    <img src="./sinziro.webp"> <div class="preview-caption">당시 인질 승객 전원 석방 대신 본인이 직접 인질이 되겠다고 설득하며 국민적 영웅으로 칭송되었다.</div></div></span> 차관 등 13명을 인질로 맞교환해 북한으로 향했다. 이후 북한의 미림비행장에 도착하고 범인들은 북한에 망명했다. </h2>
+			</div>
+		</div>
+	</section>
+    </main>
+    <section id="conseq" class="conseq-section">
+    <p class="conseq-section-title">Consequence</p>
+    
+    <div class="conseq-body">
+        
+        <div class="conseq-menu">
+            <h2 class="conseq-tab tab-1 active" onclick="changeTab(this, 'detail-1')">국제수배 중인 납치범</h2>
+            <h2 class="conseq-tab tab-2" onclick="changeTab(this, 'detail-2')">원만한 한일관계</h2>
+            <h2 class="conseq-tab tab-3" onclick="changeTab(this, 'detail-3')">북한에서의 생활</h2>
+        </div>  
+        
+        <div class="conseq-content-viewport">           
+            <div id="detail-1" class="conseq-detail detail-1 active">
+                <img src="criminal.webp" alt="특수부대 이미지">
+                <h2 class="detail-text">
+                    일본 정부는 그동안 이들이 납치범이므로 인도해 줄 것을 북한에 꾸준히 요구해 왔으나 북한 측은 이를 거부해 왔지만 2001년부터 북한은 요도호 납치범 가족의 귀국을 허용하여 몇 차례 귀국이 이루어졌으며 2004년 7월 북한은 요도호 문제는 일본 정부 측과 이전의 적군파 구성원들 사이의 문제라며 납치범을 일본으로 보낼 수 있다고 밝혔다. 실제 납치에 가담한 테러범들로 생존한 이들은 2024년까지 북한 내에 생존중이거나 일본에서 수배중이다.
+                </h2>
+            </div>
+            <div id="detail-2" class="conseq-detail detail-2">
+                <img src="relation.jpeg">
+                <h2 class="detail-text">
+                    테러범들이 김포공항에 도착했을 때 일본에서는 우려가 많았지만 한국은 간단한 방법으로 테러범을 속이려 들었고 그것이 먹히지 않았을 때도 무차별 무력진압이라는 카드를 꺼내지도 않았다. 결국 일본 측이 우려하던 일은 벌어지지 않았고 승무원을 제외한 인질 전원이 한국에서 풀려나게 되어 이것이 일본 측의 호감을 샀다. 이 점은 이후 한일간 외교 교섭에서도 한국 측에 유리하게 작용되었다고 한다.
+                </h2>
+            </div>
+            <div id="detail-3" class="conseq-detail detail-3">
+                <img src="now.jpg">
+                <h2 class="detail-text">
+                    김일성 정권은 자신들에게 자진 망명해온 이들을 "세계 혁명을 추진하는 동지"로 추켜세우며 대대적으로 환대했다. 이후 북한에서 생활하며 자녀를 낳거나 북한을 찬양하는 글을 X에 올리는 등 자발적으로 의거월북한 인사들이기 때문에 호의호식하며 사는 것처럼 보인다.
+                </h2>
+            </div>
+        </div>
+
+    </div>
+</section>
+<script>
+function changeTab(clickedTab, detailId) {
+    // 1. 왼쪽 모든 메뉴에서 검정 박스(.active) 제거
+    const tabs = document.querySelectorAll('.conseq-tab');
+    tabs.forEach(tab => tab.classList.remove('active'));
+    
+    // 2. 오른쪽 모든 설명 박스 숨기기
+    const details = document.querySelectorAll('.conseq-detail');
+    details.forEach(detail => detail.classList.remove('active'));
+    
+    // 3. 현재 클릭한 메뉴만 검정 박스 활성화
+    clickedTab.classList.add('active');
+    
+    // 4. 현재 클릭한 메뉴와 짝꿍인 설명 박스 켜기
+    const targetDetail = document.getElementById(detailId);
+    if (targetDetail) {
+        targetDetail.classList.add('active');
+    }
+}
+</script>
+</body>
+</html>

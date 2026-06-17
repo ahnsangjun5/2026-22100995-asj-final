@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./css/styles.css">
+	<title></title>
+</head>
+<body>
+	<nav class="side-nav">
+        <a href="index.html" class="nav-box nav-arrow">←</a>
+        <a href="#header-top" class="nav-box">Top</a>
+        <a href="#outline" class="nav-box">outline</a>
+        <a href="#info" class="nav-box">Info</a>
+        <a href="#conseq" class="nav-box">Conseq</a>
+    </nav>
+    <main class="main-content">
+	<header id="header-top"class="header-contents" style="background-image: url('./entebbe_bg.png');" >
+		<div class="header-text">
+			<h1>Operation Entebbe<br>June~July, 1976<br>Air France Flight 139<br>From Tel Aviv<br>To Paris</h1>
+		</div>
+	</header>
+	<section id="outline">
+		<div class="o-contents">
+			<p class="o-title">outline</p>
+			<div class="o-row">
+				<h2 class="o-index">사건명</h2>
+				<h2>엔테베 작전</h2>
+			</div>
+			<div class="o-row">
+				<h2 class="o-index">납치 항공편</h2>
+				<h2>에어 프랑스 139편</h2>
+			</div>
+			<div class="o-row">
+				<h2 class="o-index">출발지</h2>
+				<h2>텔 아비브</h2>
+			</div>
+			<div class="o-row">
+				<h2 class="o-index">목적지</h2>
+				<h2>파리</h2>
+			</div>
+			<div class="o-row">
+				<h2 class="o-index">사건 발생지</h2>
+				<h2>우간다 엔테베 공항</h2>
+			</div>
+			<div class="o-row">
+				<h2 class="o-index">범인</h2>
+				<h2>팔레스타인 인민해방전선 + 서독 혁명분파</h2>
+			</div>
+		</div>
+	</section>
+	<section id="info">
+		<div class="o-contents">
+			<p class="o-title">info</p>
+			<div>
+				<h2>1976년 6월 27일, 에어프랑스 139편은 텔아비브 - 아테네 - 파리 노선으로 운항 중 아테네에서 탑승한 <span class="hover-popup-container"><span class="txt-hover">PFLP</span> 
+                    <div class="preview-box">
+                    <img src="./pflp.jpeg"> <div class="preview-caption">팔레스타인의 공산주의 정당이자 무장단체이다.</div>
+                </div></span>무장대원들이 비행기를 장악했다.
+				납치범의 요구사항은 이스라엘과 여러 국가에 수감된 친팔레스타인 수감자를 
+				석방하라는 것이었다. 비행기는 파리 대신 우간다 엔테베 공항으로 이동하였다. 
+				당시 우간다 대통령은 납치범들에게 우호적이었고, 납치범들은 우간다군과 
+				공권력의 지원 아래 보호를 받으며 인질을 관리하였다.
+				이스라엘은 장기 인질화 우려, 국제 테러 선례 방지, 해외 자국민 보호 원칙으로 
+				이스라엘 특수부대 <span class="hover-popup-container"><span class="txt-hover">Sayeret Matkal</span>
+                <div class="preview-box">
+                    <img src="./Sayeret Matkal.jpeg"> <div class="preview-caption">이스라엘 군사정보국 아만 소속 직할 특수작전부대이다.</div>
+                </div></span> 투입을 결정하였다. 
+				이스라엘에서 우간다까지 약 4000km 이상 비밀 비행 후 우간다 대통령 
+				<span class="hover-popup-container"><span class="txt-hover">Idi Amin</span>
+                <div class="preview-box">
+                    <img src="./idi.jpeg"> <div class="preview-caption">우간다의 제3대 대통령으로 아프리카 역사상 최악의 독재자로 꼽히는 자이다</div>
+                </div></span>
+                의 차량과 비슷한 <span class="hover-popup-container"><span class="txt-hover">검은 벤츠</span>
+                <div class="preview-box">
+                    <img src="./benz.png"> <div class="preview-caption">메르세데스 벤츠 220D(W115) 차량이었으며 부대원 중 한명은 Idi Amin의 
+                    정복을 입고 위장했다.</div>
+                </div>
+                </span>
+                를 준비했다. 이후 차량을 통해 우간다군을 
+				속여 공항 내부 깊숙이 전급한 뒤 터미널에 들어가 납치범을 즉시 사살, 우간다군과 교전 끝에 인질을 구출했다.</h2>
+			</div>
+		</div>
+	</section>
+    </main>
+    <section id="conseq" class="conseq-section">
+    <p class="conseq-section-title">Consequence</p>
+    
+    <div class="conseq-body">
+        
+        <div class="conseq-menu">
+            <h2 class="conseq-tab tab-1 active" onclick="changeTab(this, 'detail-1')">현대 대테러의 상징</h2>
+            <h2 class="conseq-tab tab-2" onclick="changeTab(this, 'detail-2')">인질과 납치범 인명피해</h2>
+            <h2 class="conseq-tab tab-3" onclick="changeTab(this, 'detail-3')">Idi Amin의 최후</h2>
+        </div>  
+        
+        <div class="conseq-content-viewport">           
+            <div id="detail-1" class="conseq-detail detail-1 active">
+                <img src="terror.png" alt="특수부대 이미지">
+                <h2 class="detail-text">
+                    그동안 군사 이론상으로만 논의되어 온 대규모 인질 구출 작전이 실제로 성공적으로 가능함을 증명하였고, 
+                    이후 세계 각국에서 인질 구출 작전을 위한 대테러 부대 양성과 대테러 작전 수립 붐이 불었다. 
+                    '엔테베 작전'이라는 단어 자체가 기습적인 군사작전을 가리키는 관용구로 사용되고 있을 정도다.
+                </h2>
+            </div>
+            <div id="detail-2" class="conseq-detail detail-2">
+                <img src="death.jpg">
+                <h2 class="detail-text">
+                    작전 과정에서 무장 납치범 7명 전원과 우간다군 수십 명이 사살되었다. 이스라엘 특수부대 측에서는 
+                    현장 지휘관이었던 요나탄 네타냐후 중령이 전사하였으며, 인질 중 3명이 교전 중 오인 사격 등으로 안타깝게 사망하였다.
+                </h2>
+            </div>
+            <div id="detail-3" class="conseq-detail detail-3">
+                <img src="idi.png">
+                <h2 class="detail-text">
+                    이 사건으로 우간다 대통령 이디 아민의 국제적 위신은 완전히 추락하였다. 자국 공항이 타국 특수부대에 
+                    의해 무력으로 뚫린 무능함이 천하에 드러났고, 이는 이후 그가 독재 정권의 몰락을 맞이하고 망명길에 오르는 결정적인 계기 중 하나가 되었다.
+                </h2>
+            </div>
+        </div>
+
+    </div>
+</section>
+<script>
+function changeTab(clickedTab, detailId) {
+    // 1. 왼쪽 모든 메뉴에서 검정 박스(.active) 제거
+    const tabs = document.querySelectorAll('.conseq-tab');
+    tabs.forEach(tab => tab.classList.remove('active'));
+    
+    // 2. 오른쪽 모든 설명 박스 숨기기
+    const details = document.querySelectorAll('.conseq-detail');
+    details.forEach(detail => detail.classList.remove('active'));
+    
+    // 3. 현재 클릭한 메뉴만 검정 박스 활성화
+    clickedTab.classList.add('active');
+    
+    // 4. 현재 클릭한 메뉴와 짝꿍인 설명 박스 켜기
+    const targetDetail = document.getElementById(detailId);
+    if (targetDetail) {
+        targetDetail.classList.add('active');
+    }
+}
+</script>
+</body>
+</html>
