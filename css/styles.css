@@ -1,8 +1,9 @@
 /*css초기화 및 기본 세팅*/
-		body,h1,h2,h3,p,ul,li{margin: 0; padding:0px; word-break: keep-all;}
+		body,h1,h2,h3,p,ul,li{margin: 0; padding:0px; word-break: keep-all; }
 		h1,h2,h3,p{font-family: 'Pretendard'}
 		h1,h2,h3{font-weight: 700;}
 		p{font-weight: 400;}
+		header,section{overflow: hidden; width: 100%; position: relative; padding-left: 180px;}
 
 /*nav*/
 	.side-nav {
@@ -43,8 +44,7 @@
 
 /*main*/
 .main-content {
-    margin-left: 180px; 
-    width: calc(100% - 180px);
+    width: 100%;
     box-sizing: border-box;
     overflow: hidden;
 	}
@@ -58,8 +58,10 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-	width: 1200px;
-    margin: 0 auto;}
+	width:100%;
+    margin:0 auto;
+    padding:0 40px;
+    box-sizing:border-box;}
     .header-contents::after {
     content: '';
     position: absolute;
@@ -74,12 +76,17 @@
     z-index: 1;}
     .header-text {
     position: relative;
-    z-index: 2; 
+    z-index: 2;
+    padding-left: 180px;
+    width: 1500px;
 	}
     
 /*outline*/
 	h2{font-size: 2.3rem; line-height: 1.8;}
-	.o-contents{width:1100px; padding: 50px;}
+	.o-contents{width:100%;
+    padding:100px;
+    padding-right: 300px;
+    box-sizing:border-box;}
 	.o-title{font-size: 1.2rem;
 		width: 100px;
 		margin-bottom:20px; }
@@ -98,11 +105,13 @@
 	width: 300px;     
 	flex-shrink: 0;     
 	}
-	.o-index{padding-right: 100px;}
+	.o-index{padding-right: 200px;}
 
 
 /*info*/
-	.i-contents{width:1100px; padding: 100px;}
+	.i-contents{width:100%;
+    box-sizing:border-box;}
+    .i-text{width: auto;}
 	.hover-popup-container {
     position: relative;
     display: inline-block;
@@ -171,8 +180,10 @@
 	.conseq-section {
     display: flex;
     flex-direction: column; /* 💡 글자는 위, 박스들은 아래로 쌓이도록 설정 */
-    width: 1450px;
-    max-width: 1450px;
+    width:100%;
+    min-height:100vh;
+    max-width:none;
+    padding-left:0;
     height: 100vh; 
     background-color: #fff;
     box-sizing: border-box;
@@ -193,14 +204,15 @@
 
 	.conseq-body {
     display: flex;
-    width: 1450px;
+    width: 100%;
     flex: 1;
     box-sizing: border-box;
 	}
 
 
 	.conseq-menu {
-    width: 400px; 
+    flex:0 0 25%;
+    width: 500px;
     background-color: #e0e0e0; 
     padding: 40px 40px; /* 💡 내부 메뉴 정렬용 기본 패딩만 남김 */
     display: flex;
@@ -220,6 +232,7 @@
     background-color: transparent;
     transition: all 0.2s ease;
     align-self: flex-start; 
+    width: 300px;
 	}
 
 
@@ -230,7 +243,8 @@
 	}
 
 	.conseq-content-viewport {
-    width: 1000px; 
+    flex:1;
+    width:100; 
     background-color: #000;
     position: relative; 
     box-sizing: border-box;
@@ -243,8 +257,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 600px;
+    width: 100%;
     padding: 60px;
+    padding-right: 200px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -271,6 +286,7 @@
 	.detail-text {
     color: #aaa;
     word-break: keep-all;
+    width: 600px;
 	}
 
 
