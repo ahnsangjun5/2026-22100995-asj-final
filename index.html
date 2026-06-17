@@ -7,7 +7,7 @@
 	<style>
 /*css초기화 및 기본 세팅*/
 		body,h1,h2,h3,p,ul,li{margin: 0px; padding:0px; word-break: keep-all;}
-		section{overflow: hidden;}
+		header,section{overflow: hidden; width: 100%; position: relative;}
 		h2,h3,p{font-family: 'Pretendard'}
 		h2{font-weight: 700;}
 		h3{font-weight: 700;}
@@ -92,13 +92,11 @@
 		.header-container {
 	    position: relative;
 	    width: 100%;
-	    max-width: 2000px;
 	    height: 1200px; 
 	    overflow: hidden;
 		}
 		.header-container video{
 	    width: 100%;
-	    max-width: 2000px;
 	    height: 100%;
 	    object-fit: cover;
 	    display: block;
@@ -124,7 +122,6 @@
 /*what is hijacking*/
 		.page-wrapper {
 	    width: 100%;
-	    max-width: 2000px;
 	    background-color: #000;
 	    padding: 40px; 
 	    display: block;
@@ -134,7 +131,6 @@
 		
         .container {
             width: 100%;
-            max-width: 2000px;
             margin: 0 auto;
             border: 2px solid #222;
             position: relative;
@@ -308,7 +304,6 @@
 /*법률 파트*/
 		.law-section {
 	    width: 100%;
-	    max-width: 1500px;
 	    margin: 0 auto;
 	    background-color: #000;
 	    color: #aaa;
@@ -323,7 +318,6 @@
 	    grid-template-columns: 0.65fr 0.25fr 1.1fr; /* 그리드 선 배치를 위한 분할 */
 	    border-bottom: 1px solid #222;
 	    width: 100%;
-	    max-width: 2000px;
 	    box-sizing: border-box;
 		}
 
@@ -537,7 +531,6 @@
 	    /*사건 페이지*/
 	    .event-section {
 	    width: 100%;
-	    max-width: 2000px;
 	    margin: auto;
 	    background-image: url("cockpit.png");
 	    background-size: cover;
@@ -731,7 +724,6 @@
 
 		/*푸터*/
 		.footer-contents{width: 100%;
-			max-width:2000px;
 			padding: 50px 30px;
 			margin: 0 auto;
 			background-color: black;
