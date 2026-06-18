@@ -3,7 +3,7 @@
 		h1,h2,h3,p{font-family: 'Pretendard'}
 		h1,h2,h3{font-weight: 700;}
 		p{font-weight: 400;}
-		header,section{overflow: hidden; width: 100%; position: relative; padding-left: 180px;}
+		header,section{width: 100%; position: relative;}
 
 /*nav*/
 	.side-nav {
@@ -44,7 +44,8 @@
 
 /*main*/
 .main-content {
-    width: 100%;
+    margin-left: 180px; 
+    width:calc(100% - 180px);
     box-sizing: border-box;
     overflow: hidden;
 	}
@@ -61,7 +62,8 @@
 	width:100%;
     margin:0 auto;
     padding:0 40px;
-    box-sizing:border-box;}
+    box-sizing:border-box;
+	}
     .header-contents::after {
     content: '';
     position: absolute;
@@ -76,16 +78,13 @@
     z-index: 1;}
     .header-text {
     position: relative;
-    z-index: 2;
-    padding-left: 180px;
-    width: 1500px;
+    z-index: 2; 
 	}
     
 /*outline*/
 	h2{font-size: 2.3rem; line-height: 1.8;}
 	.o-contents{width:100%;
     padding:100px;
-    padding-right: 300px;
     box-sizing:border-box;}
 	.o-title{font-size: 1.2rem;
 		width: 100px;
@@ -105,13 +104,14 @@
 	width: 300px;     
 	flex-shrink: 0;     
 	}
-	.o-index{padding-right: 200px;}
+	.o-index{padding-right: 100px;}
 
 
 /*info*/
 	.i-contents{width:100%;
+    padding:100px;
     box-sizing:border-box;}
-    .i-text{width: auto;}
+    .i-text{width: 1200px;}
 	.hover-popup-container {
     position: relative;
     display: inline-block;
@@ -146,7 +146,7 @@
     visibility: hidden;
     pointer-events: none;
     transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
-    z-index: 999;
+    z-index: 200;
 	}
 	
 	.hover-popup-container:hover .preview-box {
@@ -244,7 +244,7 @@
 
 	.conseq-content-viewport {
     flex:1;
-    width:100; 
+    width:auto; 
     background-color: #000;
     position: relative; 
     box-sizing: border-box;
@@ -288,5 +288,6 @@
     word-break: keep-all;
     width: 600px;
 	}
+
 
 
